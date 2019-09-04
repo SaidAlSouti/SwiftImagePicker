@@ -23,10 +23,7 @@ class ViewController: UIViewController {
         config.onlySquareImagesFromCamera = false
         config.startOnScreen = .library
         
-        config.targetImageSize = .cappedTo(size: 1280)
-        
-        
-    
+        config.targetImageSize = .cappedTo(size: 1048)
 //        config.showsCrop = .rectangle(ratio: 2)
         let picker = YPImagePicker(configuration: config)
         picker.didFinishPicking { [unowned picker] items, _ in
